@@ -2,8 +2,6 @@ var _ = require("lodash");
 var DOMParser = require("xmldom").DOMParser;
 var domParser = new DOMParser();
 
-module.exports = citygmlPoints;
-
 var poslistRegex = /(\r\n|\n|\r|\t)+/gm;
 
 var citygmlPoints = function(xml) {
@@ -46,3 +44,5 @@ var citygmlPoints = function(xml) {
 
   return points;
 };
+
+module.exports = citygmlPoints;
